@@ -1,26 +1,8 @@
 --------------------------------------------------------------------------------
 ---------------------------------- DokusCore -----------------------------------
 --------------------------------------------------------------------------------
-CreateThread(function()
-  Notify('Setting Menu Loading....', 'topCenter', 2500) Wait(3000)
-  Notify('Setting Menu Initialized!', 'topCenter', 3000)
+RegisterNUICallback('Teleport', function(Data)
+  if (Data.Type == 'TPM') then TriggerEvent('DokusCore:Core:Admin:Commands:TPM') CloseMenu() return end
 end)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
