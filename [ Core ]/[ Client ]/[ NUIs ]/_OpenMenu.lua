@@ -18,7 +18,7 @@ RegisterNUICallback('OpenMenu', function(Data)
     SendNUIMessage({ Action = 'SetMenu',  Menu = 'SkinMenu' })
     SendNUIMessage({ Action = 'OpenMenu', Menu = SkinMenu[1] })
   elseif (Data.Menu == 'MusicMenu') then
-    SendVolumeWarning()
+    -- SendVolumeWarning()
     SendNUIMessage({ Action = 'SetMenu',  Menu = 'MusicMenu' })
     SendNUIMessage({ Action = 'OpenMenu', Menu = MusicMenu[1] })
   elseif (Data.Menu == 'AutoPlay') then
@@ -40,9 +40,17 @@ RegisterNUICallback('OpenMenu', function(Data)
     SendNUIMessage({ Action = 'SetMenu',  Menu = 'WesternMusicMenu' })
     SendNUIMessage({ Action = 'OpenMenu', Menu = WesternMusicMenu[1] })
   end
-
+  --------------------------------------------------------------------------------
+  --------------------------------------------------------------------------------
+  -- Resync on DokusCore restart
+  --------------------------------------------------------------------------------
   -- Admin Menu
   if (Data.Menu == 'AdminMenu') then
+    while not FrameReady() do Wait(1000) end
+    while not UserInGame() do Wait(1000) end
+    local Data = TCTCC('DokusCore:Core:GetCoreUserData')
+    local IsAdmin = TSC('DokusCore:Core:DBGet:Characters', { 'User', 'Single', { Data.Steam, Data.CharID }}).Result[1].Group
+    if (string.lower(IsAdmin) == 'user') then return Notify("ERROR: Unable to open this menu, you're not a admin!") end
     SendNUIMessage({ Action = 'SetMenu',  Menu = 'AdminMenu' })
     SendNUIMessage({ Action = 'OpenMenu', Menu = AdminMenu[1] })
   elseif (Data.Menu == 'TeleportMenu') then
@@ -98,25 +106,5 @@ RegisterNUICallback('OpenMenu', function(Data)
     SendNUIMessage({ Action = 'OpenMenu', Menu = Volume4[1] })
   end
 end)
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
