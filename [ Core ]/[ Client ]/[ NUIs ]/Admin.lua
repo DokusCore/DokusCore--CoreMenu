@@ -17,3 +17,6 @@ end)
 RegisterNUICallback('SyncUsableItems', function(Data) TriggerEvent('DokusCore:UsableItems:Sync') end)
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
+RegisterNUICallback('SyncStoreItems', function(Data) TriggerEvent('DokusCore:Stores:ReSyncStoreItems') end)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------

@@ -60,6 +60,7 @@ ModuleSyncMenu = {
     MenuTitle = 'Module Sync Menu',
     MenuOptions = {
       { Type = 'Option', Option = 'SyncUsableItems',   Title = 'Sync UsableItems' },
+      { Type = 'Option', Option = 'SyncStoreItems',    Title = 'Sync Store Items' },
     }
   }
 }

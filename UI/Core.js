@@ -78,6 +78,7 @@ const InitData = (nr) => {
   if ((Menu == 'AdminMetamolismMenu') && (nr == 3))        { ToggleOption('ASelfMenu', 'HealThirst');  };
 
   if ((Menu == 'ModuleSyncMenu') && (nr == 0))        { ToggleOption('SyncUsableItems');  };
+  if ((Menu == 'ModuleSyncMenu') && (nr == 1))        { ToggleOption('SyncStoreItems');   };
 
   if ((Menu == 'LangList1') && (nr == 0))        { ToggleOption('ChangeLanguage', 'en');               };
   if ((Menu == 'LangList1') && (nr == 1))        { ToggleOption('ChangeLanguage', 'de');               };
