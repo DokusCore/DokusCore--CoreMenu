@@ -27,6 +27,7 @@ TeleportMenu = {
     MenuTitle = 'DokusCore Menu',
     MenuOptions = {
       { Type = 'Option', Option = 'TPM', Title = 'Teleport To Marker' },
+      { Type = 'Option', Option = 'TTC', Title = 'Teleport to Coords' },
     }
   }
 }

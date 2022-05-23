@@ -3,6 +3,7 @@
 --------------------------------------------------------------------------------
 RegisterNUICallback('Teleport', function(Data)
   if (Data.Option == 'TPM') then TriggerEvent('DokusCore:Core:Admin:Commands:TPM') CloseMenu() return end
+  if (Data.Option == 'TTC') then TriggerEvent('DokusCore:Core:Admin:Commands:TeleportTC') CloseMenu() return end
 end)
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
