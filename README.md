@@ -1,7 +1,7 @@
 ---
 <p align="center">
   <img width="600" height="200" src="https://user-images.githubusercontent.com/49053928/111937011-2e9b8080-8ac7-11eb-914a-a0d94380d611.gif"><br>
- <b>DokusCore Settings Menu (v1.5.1) [BETA]</b> - A Players Settings System for DokusCore!.
+ <b>DokusCore Settings Menu (v1.5.2) [BETA]</b> - A Players Settings System for DokusCore!.
 </p>
 
 ---
@@ -22,7 +22,7 @@ mandatory for DokusCore to run properly.
 
 ---
 # Discord
-On our [Discord](https://discord.io/DokusCore) you can find all Information about this<br>
+On our [Discord](https://discord.io/dokuscore) you can find all Information about this<br>
 project, feel free to join. Here you can also interact with other playing and testing<br>
 the Core, as well as giving your suggestions and opinions.
 
