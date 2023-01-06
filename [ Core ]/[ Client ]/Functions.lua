@@ -30,7 +30,16 @@ end
 function OpenMenu()
   IsMainMPShown = true
   ActPrompts()
+  NoteNPCTalk('AdminMenu v2', "You can open the new admin menu by tapping SHIFT while the core menu is open!", false, 5000)
   TriggerEvent('DokusCore:CoreMenu:ActPrompts')
+end
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+function OpenDCAdmin()
+  TriggerEvent('DokusCore:Admin:OpenMenu')
+  IsMainMPShown = false
+  IsAnyMenuOpen = false
+  ResetPrompts()
 end
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
