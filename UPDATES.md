@@ -2,9 +2,14 @@
 ############################ [ DokusCore Updates ] #############################
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
+# Update v2.4.1
+--------------------------------------------------------------------------------
+- Fixed: Menu name was saying DokuCore -- oeps
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 # Update v2.4.0
 --------------------------------------------------------------------------------
-- Added: Romanian language made by RABBIT in discord!
+- Added: Romanian language made by @RABBIT in discord!
 - Disabled: Auto move with horse, as this was still working without the prompt.
 - Added: Function to order your horse to stay, this will disable wandering and
   prevents from your horse walking away when hitched.
